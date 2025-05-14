@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Wars Task Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1> Task Form</h1>
+    
+    <div class="task-display">
+      <h2>Available Tasks</h2>
+      <div id="tasks-container"></div>
+    </div>
+    
+    <div class="task-selection">
+      <label for="task-id">Select Task ID:</label>
+      <select id="task-id">
+        <option value="">-- Select a Task --</option>
+      </select>
+    </div>
+    
+    <!-- Form -->
+    <form id="task-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="task">Task Description:</label>
+      <input type="text" id="task" name="task" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
